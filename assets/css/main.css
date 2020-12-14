@@ -1,0 +1,450 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #EEE;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.815rem;
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 2.441rem;
+}
+
+h4 {
+  font-size: 1.953rem;
+}
+
+h5 {
+  font-size: 1.563rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+hr {
+  width: 100px;
+  border: none;
+  height: 3px;
+  border-radius: 4px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#6262faff), to(#c51a49ff));
+  background: linear-gradient(to bottom right, #6262faff, #c51a49ff);
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.hero img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero .overlay {
+  width: inherit;
+  height: inherit;
+  padding-bottom: 100px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#6262faDD), to(#c51a49dd));
+  background: linear-gradient(to bottom right, #6262faDD, #c51a49dd);
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.hero .overlay .logo {
+  margin-bottom: 1rem;
+}
+
+.hero .wave {
+  position: absolute;
+  bottom: -1px;
+  z-index: 3;
+}
+
+.section {
+  width: 100vw;
+  position: relative;
+}
+
+.section.darken {
+  background-color: #e4e4e4;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section.colored {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#6262faDD), to(#c51a49dd));
+  background: linear-gradient(to bottom right, #6262faDD, #c51a49dd);
+  color: white;
+}
+
+.section.colored .top-wave {
+  position: absolute;
+  top: -1px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.section.colored .bottom-wave {
+  position: absolute;
+  bottom: -1px;
+}
+
+.section .img-wrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.section .img-wrapper img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section .img-wrapper::after {
+  content: '';
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border-radius: 4px;
+  z-index: -1;
+  top: 10px;
+  left: 10px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#6262faff), to(#c51a49ff));
+  background: linear-gradient(to bottom right, #6262faff, #c51a49ff);
+}
+
+.clients img {
+  width: 100%;
+  height: 75px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+}
+
+.contact svg {
+  width: 36px;
+  height: 36px;
+}
+
+.contact p {
+  word-break: break-all;
+  text-align: center;
+}
+
+.slideshow {
+  margin: 1rem 0;
+}
+
+.slideshow.product .wrapper {
+  padding: 1.5rem 1rem;
+}
+
+.slideshow.product .wrapper img {
+  width: 30%;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 0 0.5rem 0.5rem;
+}
+
+.slideshow .wrapper, .slideshow .slick-cloned {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  border-radius: 6px;
+  margin: 0 1rem;
+}
+
+.slideshow .wrapper div, .slideshow .slick-cloned div {
+  background: -webkit-gradient(linear, left top, right bottom, from(#6262faff), to(#c51a49ff));
+  background: linear-gradient(to bottom right, #6262faff, #c51a49ff);
+  color: white;
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  position: relative;
+  background-clip: text none;
+}
+
+.slideshow .wrapper p, .slideshow .slick-cloned p {
+  margin: 0;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service img {
+  width: 64px;
+  height: 64px;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 275px;
+  border-radius: 6px;
+}
+
+.portfolio img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+.portfolio .overlay {
+  content: '';
+  position: absolute;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#6262fa55), to(#c51a4955));
+  background: linear-gradient(to bottom right, #6262fa55, #c51a4955);
+}
+
+.portfolio p {
+  position: absolute;
+  bottom: 0;
+  max-width: calc(100% - 1.5rem);
+  padding: 0.25rem 0.5rem;
+  font-style: italic;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0 1rem;
+}
+
+.blog img {
+  width: 100%;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.blog h6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.blog p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.blog button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right bottom, from(#6262faaa), to(#c51a49aa));
+  background: linear-gradient(to bottom right, #6262faaa, #c51a49aa);
+  color: white;
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  color: #6262faFF;
+  background: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.container {
+  width: inherit;
+  height: inherit;
+  position: inherit;
+  display: inherit;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  padding: 0 1rem;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-cols-2 {
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+footer.shiroyuki {
+  width: 100%;
+  background-color: #c51a49cc;
+  color: white;
+  padding: 1rem;
+}
+
+footer.shiroyuki p {
+  margin: 0;
+}
+
+footer.shiroyuki p a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
